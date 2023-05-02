@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JS</title>
+</head>
+<body>
+                            <!-- exo 1 déclaration de variables
+    <script>
+        var message = "Salut les DWWM"
+        alert(message)
+    </script> -->
+                                     <!-- exo2 -->
+    <!-- <script>
+        var partOne = "hello"
+        var partTwo = "world"
+        alert(partOne+partTwo)
+    </script> -->
+                                    <!-- exo3 -->
+    <!-- <script>
+        var firstname = "Mévine"
+        var age = 48
+        var city = "Paris"
+        alert("Je m'appelle " + firstname + ", j'ai " + age + " ans et j'habite " + city)
+    </script> -->
+                                    <!-- exo4 -->
+    <!-- <script>
+        var name = window.prompt("Quel votre nom ?", "veeren")
+        var firstname = window.prompt("Quel est votre prénom ?", "Mévine")
+        var age = window.prompt("Quel est votre âge ?", "48 ans")
+        var mail = window.prompt("Quel est votre adresse mail ?", "mevine@free.fr")
+        alert("nom : " + name + "\nprénom :" + firstname + "\nage : " + age + "\nmail : " + mail)
+    </script> -->
+                                    <!-- exo5 -->
+    <!-- <script>
+        var nb1 = window.prompt("entrez un nombre entier", "1")
+        var nb2 = window.prompt("entrez un nombre", "2")
+        let sum = parseInt(nb1) + parseInt(nb2)
+        alert("le résutat est " + (sum))
+    </script> -->
+                                    <!-- exo1 Conditions, Ternaires et ... SWITCH -->
+    <!-- <script>
+        let age = window.prompt("Veuillez entrer votre âge :")
+        if (age >= 18) {
+        console.log("L'utilisateur est majeur !")
+        } else {
+        console.log("L'utilisateur est mineur.")
+        }
+    </script> -->
+                                    <!-- exo2 -->
+
+    <!-- <script>
+        let nb = window.prompt("Veuillez entrer un chiffre :")
+        let message = nb % 2 == 0 ? "Le chiffre est pair." : "Le chiffre est impair."
+        console.log(message)
+    </script> -->    
+                                    <!-- exo3 -->
+    <!-- <script>
+        var password = "1234"
+        let mdp = window.prompt("Veuillez entrer votre mot de passe")
+        if (mdp !== password) {
+            console.log("Mauvais mot de passe")
+        } else {
+            console.log("Hello Mr Anderson")
+        }
+    </script> -->
+                                    <!-- exo4 -->
+
+    <!-- <script>
+        let gender = window.prompt("Veuillez indiquer si vous vous êtes un homme ou une femme")
+        let age = window.prompt("Veuillez indiquer votre âge")
+        if (gender == "homme") {
+            if (age >= 18) {
+                console.log("L'utilisateur est de type masculin et majeur")
+            } else {
+                console.log("L'utilisateur est de type masculin et mineur")
+            }
+        } else if (gender == "femme") {
+            if (age >= 18) {
+                console.log("L'utilisatrice est de type feminin et majeure")
+            } else {
+                console.log("L'utilisatrice est de type feminin et mineure")
+            }
+        } else {
+            console.log("Vous avez indiqué des informations non conformes")
+        }
+    </script> -->
+                                    <!-- exo5 -->
+    <!-- <script>
+        let average = window.prompt("Veuillez entrer la moyenne sur 20 d'un stagiare de l'AFPA :")
+        if (average == 0) {
+            console.log("Un rendez-vous sera programmé en raison de la moyenne.")
+        } else if (average > 0 && average <= 5){
+            console.log("Trimestre insuffisant.")
+        } else if (average > 5 && average <= 10){
+            console.log("Trimestre moyen.")
+        } else if (average > 10 && average <= 13){
+            console.log("Trimestre moyen")
+        } else if (average > 13 && average <= 18){
+            console.log("Excellent trimestre.")
+        } else if (average > 18 && average <= 20){
+            console.log("Félicitations.")
+        }
+        else{
+            console.log("Vous avez indiqué des informations non conformes ne permettant pas le calcul")
+        }
+    </script> -->
+
+                                    <!-- exo6 -->
+
+    <!-- <script>
+        let mois = prompt("Veuillez rentrer un numéro de mois entre 1 et 12 :")
+
+        switch (mois) {
+        case "1":
+            console.log("Janvier")
+            break
+        case "2":
+            console.log("Février")
+            break
+        case "3":
+            console.log("Mars")
+            break
+        case "4":
+            console.log("Avril")
+            break
+        case "5":
+            console.log("Mai")
+            break
+        case "6":
+            console.log("Juin")
+            break
+        case "7":
+            console.log("Juillet")
+            break
+        case "8":
+            console.log("Août")
+            break
+        case "9":
+            console.log("Septembre")
+            break
+        case "10":
+            console.log("Octobre")
+            break
+        case "11":
+            console.log("Novembre")
+            break
+        case "12":
+            console.log("Décembre")
+            break
+        default:
+            console.log("Information non conforme. Veuillez rentrer un numéro de mois entre 1 et 12.")
+        }
+    </script> -->
+
+                                    <!-- exo61 -->
+
+    <!-- <script>
+        let mois = Number(prompt("Veuillez rentrer un numéro de mois entre 1 et 12 :"))
+
+        switch (mois) {
+        case 1:
+            console.log("Janvier")
+            break
+        case 2:
+            console.log("Février")
+            break
+        case 3:
+            console.log("Mars")
+            break
+        case 4:
+            console.log("Avril")
+            break
+        case 5:
+            console.log("Mai")
+            break
+        case 6:
+            console.log("Juin")
+            break
+        case 7:
+            console.log("Juillet")
+            break
+        case 8:
+            console.log("Août")
+            break
+        case 9:
+            console.log("Septembre")
+            break
+        case 10:
+            console.log("Octobre")
+            break
+        case 11:
+            console.log("Novembre")
+            break
+        case 12:
+            console.log("Décembre")
+            break
+        default:
+            console.log("Information non conforme. Veuillez rentrer un numéro de mois entre 1 et 12.")
+        }
+    </script> -->
+
+                                    <!-- exo7 -->
+
+    <!-- <script>
+        let nb = window.prompt("Veuillez entrer un chiffre :")
+        let message = nb % 2 == 0 ? "Le chiffre est pair." : "Le chiffre est impair."
+        console.log(message)
+    </script> -->
+
+                                    <!-- exo71 -->
+
+    <!-- <script>
+        let chiffre = prompt("Veuillez rentrer un chiffre entier :");
+        console.log(chiffre % 2 === 0 ? "PAIR" : "IMPAIR");
+    </script> -->
+    
+                                    <!-- exo8 -->
+    <!-- <script>
+        if (window.confirm("En cliquant sur OK, je confirme que je rentre sur ce site en mon âme et conscience") == true) {
+            console.log("L'utilisateur a cliqué OK !")
+        } else {
+            console.log("L'utilisateur n'a pas validé !")
+        }
+    </script> -->
+                                    <!-- exo1 Boucles : Un histoire de while ... et de for ...-->
+
+    <!-- <script>
+        let i = 1
+        while (i <= 100) {
+            console.log(i)
+            i++
+        }  
+    </script> -->
+                                    <!-- exo2 -->
+    <!-- <script>
+        let i = 100
+        while (i >= 0) {
+            console.log(i)
+            i -= 2
+        }
+    </script> -->
+                                    <!-- exo3 -->
+
+    <!-- <script>
+        let nb1 = 3
+        let nb2 = 6
+        while (nb1 + nb2 <= 2023) {
+            let sum = nb1 + nb2
+            console.log(sum)
+            nb2 += sum
+        } 
+    </script> -->
+                                    <!-- exo4 -->
+        <!-- <script>
+            let i = 1
+            while (i <= 10) {
+                if (i === 10) {
+                    console.log(`Message ${i}, C'est le dernier message !`)
+                } else {
+                    console.log(`Message ${i}`)
+                }
+                i++
+            }
+        </script> -->
+                                    <!-- exo5 -->
+
+        <!-- <script>
+            var i
+            for (i = 1; i <= 13; i++) {
+                console.log(`${i}; vendredi 13`)
+            }
+        </script> -->
+                                    <!-- exo6 -->
+        <!-- <script>
+            var i
+            for (i = 0; i <= 99; i+=3) {
+                console.log(i)
+            }
+        </script> -->
+                                    <!-- exo7 -->
+        <!-- <script>
+            console.log("Start !!")
+            for (i = 20; i >= 0; i--) {
+                if (i === 20) {
+                    console.log(i)
+                } else if (i === 0) {
+                    console.log(i)
+                } else {
+                    console.log(i)
+                }
+            }
+            console.log("Finish !!")
+        </script> -->
+                                    <!-- exo8 -->
+
+        <!-- <script>
+            for (let i = 1; i <= 100; i++) {
+                if (i % 3 === 0 && i % 5 === 0) {
+                    console.log("FizzBuzz")
+                } else if (i % 3 === 0) {
+                    console.log("Fizz")
+                } else if (i % 5 === 0) {
+                    console.log("Buzz")
+                } else {
+                    console.log(i)
+                }
+            }
+        </script> -->
+                                    <!-- exo9 -->
+        <!-- <script>
+            var kebab = ""
+            for (var i = 1; i <= 10; i++) {
+                kebab += i
+                if (i < 10) {
+                   kebab += "-" 
+                }
+            }
+            console.log(kebab)
+        </script> -->
+
+    
+</body>
+</html>
